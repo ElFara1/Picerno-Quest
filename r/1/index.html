@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Indovinello 1</title>
+    <link rel="stylesheet" href="/caccia-al-tesoro/styles.css" />
+  </head>
+  <body>
+    <main class="card">
+      <h1 id="riddle-title"></h1>
+      <p id="riddle-text"></p>
+
+      <hr />
+
+      <div class="row">
+        <input
+          id="answer"
+          type="text"
+          placeholder="Scrivi la risposta…"
+          autocomplete="off"
+        />
+        <button id="check">Verifica</button>
+      </div>
+
+      <div id="msg" class="msg"></div>
+
+      <div id="next" class="next">
+        <a id="maplink" class="maplink" target="_blank" rel="noopener"
+          >Apri la prossima posizione su Google Maps</a
+        >
+        <span class="small">(si aprirà in una nuova scheda)</span>
+      </div>
+
+      <!-- CONFIG DEL RIDDLE: modifica solo qui -->
+      <script id="riddle-config" type="application/json">
+        {
+          "title": "Indovinello 1: Il guardiano",
+          "text": "Sono sempre davanti a te ma non mi puoi mai raggiungere. Cosa sono?",
+          "acceptedAnswers": ["il futuro", "futuro"],
+          "nextMapUrl": "https://www.google.com/maps?q=41.902782,12.496366"
+        }
+      </script>
+
+      <script src="/caccia-al-tesoro/app.js"></script>
+    </main>
+  </body>
+</html>
